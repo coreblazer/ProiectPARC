@@ -1,0 +1,11 @@
+c:\users\nvali\source\repos\Server\Server\bin\Debug\netcoreapp2.0\Server.deps.json
+c:\users\nvali\source\repos\Server\Server\bin\Debug\netcoreapp2.0\Server.runtimeconfig.json
+c:\users\nvali\source\repos\Server\Server\bin\Debug\netcoreapp2.0\Server.runtimeconfig.dev.json
+c:\users\nvali\source\repos\Server\Server\bin\Debug\netcoreapp2.0\Server.dll
+c:\users\nvali\source\repos\Server\Server\bin\Debug\netcoreapp2.0\Server.pdb
+c:\users\nvali\source\repos\Server\Server\obj\Debug\netcoreapp2.0\Server.csprojResolveAssemblyReference.cache
+c:\users\nvali\source\repos\Server\Server\obj\Debug\netcoreapp2.0\Server.csproj.CoreCompileInputs.cache
+c:\users\nvali\source\repos\Server\Server\obj\Debug\netcoreapp2.0\Server.AssemblyInfoInputs.cache
+c:\users\nvali\source\repos\Server\Server\obj\Debug\netcoreapp2.0\Server.AssemblyInfo.cs
+c:\users\nvali\source\repos\Server\Server\obj\Debug\netcoreapp2.0\Server.dll
+c:\users\nvali\source\repos\Server\Server\obj\Debug\netcoreapp2.0\Server.pdb
