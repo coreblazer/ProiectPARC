@@ -1,0 +1,34 @@
+﻿<Window x:Class="Biscuite.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biscuite.Windows"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" MinWidth="400" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBox AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" IsReadOnly="True" Grid.Row="0" Text="{Binding Chat}"></TextBox>
+            <TextBox Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" Text="{Binding Message, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                <TextBox.InputBindings>
+                    <KeyBinding Command="{Binding SendMessageCommand}" Key="Return" />
+                </TextBox.InputBindings>
+            </TextBox>
+        </Grid>
+        <ListView Grid.Column="1" ItemsSource="{Binding ConnectedPeople}" SelectedValue="{Binding SelectedUser, Mode=TwoWay}" >
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Challange" Command="{Binding ChallangeCommand}"/>
+                </ContextMenu>
+            </ListView.ContextMenu>
+        </ListView>
+    </Grid>
+</Window>
